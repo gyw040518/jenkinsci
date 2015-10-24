@@ -1,0 +1,34 @@
+#Usage :
+
+# docker-compose up -d jenkins 
+
+# Containers 
+
+jenkins:
+  restart: always
+  image: thshaw/jenkins:master 
+  container_name: jenkins
+
+  mem_limit: 2048m 
+  volumes:
+    - ./jenkins_data:/var/jenkins_home
+ 
+  ports:
+   - "80:8080"
+   - "50000:50000"
+
+  env_file:
+   - master/environment
+
+# Build Agents 
+
+centos6.6:
+  image: thshaw/jenkins:agent_centos6.6 
+  mem_limit: 1024m
+
+  links:
+    - jenkins:jenkins
+
+  env_file:
+    - agent/centos6.6/environment
+
