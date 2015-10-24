@@ -4,6 +4,13 @@ Setup a CI pipeline that includes a Jenkins Master with pre-baked plugins and co
 
 The CentOS build agents are containers and will be scaled up and down with the docker-compose scale command.
 
+## Prerequisites
+
+  docker
+  docker-compose
+  
+  (Tested using Docker version 1.9.0 and Docker Compose version 1.4.2)
+  
 ## Setup 
 
 We want to keep the jenkins data outside the Master container to keep it persistent.
