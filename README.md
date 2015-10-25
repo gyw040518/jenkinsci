@@ -26,6 +26,7 @@ We want to keep the jenkins data outside the Master container to keep it persist
 ```
   docker-compose pull
 ```
+![Example](/gifs/pull.gif)
 
 Note : If you wish to rebuild the Master or agent images the Dockerfiles are available under master and agents directories.
 
