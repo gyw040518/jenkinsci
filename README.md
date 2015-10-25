@@ -1,8 +1,8 @@
 # Jenkins CI using docker-compose
 
-Setup a CI pipeline that includes a Jenkins Master with pre-baked plugins and containerised build agent (CentOS).  This CI pipeline is opensource, portable, extensible, simple to upgrade and scalable, as all good CI infrastructure should be.  This has been tested locally but can be easily deployed into Joyents Triton.
+Setup CI infrastructure that includes a Jenkins Master with pre-baked plugins and containerised build agent (CentOS).  This CI infrastructure is opensource, portable, extensible, simple to upgrade and scalable, as all good CI infrastructure should be.  This has been tested locally but can be easily deployed into Joyents Triton.
 
-Note : Triton doesn't support shared volumes from the host.
+Note : Triton doesn't support shared volumes from the host, but the Jenkins Master and agent work as expected when the shared volume is commented out in the docker-compose.yaml.
 
 The CentOS build agents are containers and will be scaled up and down with the docker-compose scale command. The build agents are not using persistent storage so make sure you copy anything important from them before removing.
 
