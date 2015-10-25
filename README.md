@@ -46,6 +46,13 @@ docker-compose scale cento6.6=3
 
 Verify this agent is automatically added to the Jenkins CI master
 
+## Check logs of a service
+
+```
+docker-compose logs centos6.6
+```
+![Example](/gifs/logs.gif)
+
 ## Upgrade master
 
 Shut down master, delete container, pull new image and start
