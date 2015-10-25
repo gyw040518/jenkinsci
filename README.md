@@ -35,14 +35,15 @@ Note : If you wish to rebuild the Master or agent images the Dockerfiles are ava
 docker-compose up -d
 
 ```
-
-![Example](/composeup.gif)
+![Example](/gifs/composeup.gif)
 
 ## Start more build agents
 
 ```
 docker-compose scale cento6.6=3
 ```
+![Example](/gifs/scale.gif)
+
 Verify this agent is automatically added to the Jenkins CI master
 
 ## Upgrade master
