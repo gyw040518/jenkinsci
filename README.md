@@ -7,6 +7,7 @@ The CentOS build agents are containers and will be scaled up and down with the d
 ## Prerequisites
 
   docker
+  
   docker-compose
   
   (Tested using Docker version 1.9.0 and Docker Compose version 1.4.2)
@@ -32,7 +33,10 @@ Note : If you wish to rebuild the Master or agent images the Dockerfiles are ava
 
 ```
 docker-compose up -d
+
 ```
+
+![Example](/composeup.gif)
 
 ## Start more build agents
 
