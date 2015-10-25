@@ -2,7 +2,9 @@
 
 Setup a CI pipeline that includes a Jenkins Master with pre-baked plugins and containerised build agent (CentOS).  This CI pipeline is opensource, portable, extensible, simple to upgrade and scalable, as all good CI infrastructure should be.  This has been tested locally but can be easily deployed into Joyents Triton.
 
-The CentOS build agents are containers and will be scaled up and down with the docker-compose scale command.
+Note : Triton doesn't support shared volumes from the host.
+
+The CentOS build agents are containers and will be scaled up and down with the docker-compose scale command. The build agents are not using persistent storage so make sure you copy anything important from them before removing.
 
 ## Prerequisites
 
