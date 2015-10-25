@@ -10,6 +10,8 @@ volumes:
 
 The CentOS build agents are containers and will be scaled up and down with the docker-compose scale command. The build agents are not using persistent storage so make sure you copy anything important from them before removing.
 
+Based on work by the European Environment Agency : https://hub.docker.com/u/eeacms/
+
 ## Prerequisites
 
   docker
