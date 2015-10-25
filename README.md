@@ -62,11 +62,7 @@ Shut down master, delete container, pull new image and start
 docker-compose stop
 docker-compose rm -f jenkins
 docker-compose pull
-```
-
-Start Jenkins Master : 
-
-```
 docker-compose up -d jenkins
 ```
 
+![Example](/gifs/upgrade.gif)
